@@ -26,12 +26,15 @@ getJoke();
 //Beginning of CATAAS API Code
 const catButton = document.getElementById('catbtn');
 const catAPI = 'https://api.thecatapi.com/v1/images/search?';
+const catLoading = document.getElementById('catload');
 
 catButton.addEventListener("click", getCat);
 function getCat() {
+  catLoading.style.display = 'block';
   const catJSON = JSON.parse(httpGet(catAPI));
   console.log(catJSON[0].url );
   document.getElementById('catimg').src = catJSON[0].url;
+  catLoading.style.display = 'none';
 }
 
 getCat();

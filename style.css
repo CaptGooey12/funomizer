@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 * {
+    cursor: url(cursor.png), auto;
     overflow: hidden;   
+    font-family: 'Rubik', sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 body {
@@ -8,17 +17,90 @@ body {
     background-color: rgb(66, 151, 231);
 }
 
+p {
+    font-size: 20px;
+}
+
+#catload {
+    display: none;
+}
+
+.copyr {
+    font-size: 17px;
+}
+
+.copyr:hover {
+    color: rgb(79, 79, 180);
+    transition: all 0.3s ease-in-out;
+}
+
 .fun-things {
     display: flex;
-    padding: 30px;
+}
+
+.container {
+    display: block;
+    padding: 90px;
+    width: 100%;
 }
 
 button {
     color: rgb(0, 0, 0);
+    background-color: rgb(97, 97, 233); 
+    font-size: 18px;
+    width: 120px;
+    height: 55px;
+    border-style: none;   
+    border-radius: 8px;    
+}
+
+button:hover {
+    background-color: rgb(77, 77, 209); 
+}
+
+button:active {
+    background-color: rgb(15, 15, 131); 
+    border-style: solid;
+    border-color: rgb(40, 40, 184);
+    border-width: 6px;
 }
 
 img {
     width: auto;
     height: 270px;
     border-radius: 8px;
+}
+
+.jokeBox {
+    width: 50%;
+    float: left;
+    display: block;
+}
+
+.catBox {
+    width: 50%;
+    float: left;
+    display: block;
+}
+
+.designcirc1 {
+    width: 180px;
+    height: 180px;
+    border-radius: 150px;
+    background-color: rgb(117, 117, 219);
+    position: fixed;
+    display: block;
+    right: -70px;
+    top: -70px;
+}
+
+.designcirc2 {
+    width: 380px;
+    height: 380px;
+    border-radius: 200px;
+    background-color: rgb(117, 117, 219);
+    position: fixed;
+    display: block;
+    right: 1170px;
+    top: 470px;
 }
